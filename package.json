@@ -1,12 +1,12 @@
-{
-  "name": "earthquake-project",
+ {
+  "name": "earthquake-visualizer",
   "private": true,
   "scripts": {
-    "frontend": "cd frontend && npm run start",
-    "backend": "cd backend && node index.js",
-    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && npm run dev",
+    "dev": "concurrently -n \"client,backend\" -c \"bgBlue,bgYellow\" \"npm run frontend\" \"npm run backend\""
   },
   "devDependencies": {
-    "concurrently": "^8.0.0"
+    "concurrently": "^9.2.1"
   }
 }
