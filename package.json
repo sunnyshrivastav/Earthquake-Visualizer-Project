@@ -1,0 +1,12 @@
+{
+  "name": "earthquake-project",
+  "private": true,
+  "scripts": {
+    "frontend": "cd frontend && npm run start",
+    "backend": "cd backend && node index.js",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
